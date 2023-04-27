@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.conversation {
+  width: 30%;
+  border-right: 1px solid #e6e6e6;
+  background-color: white;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.chats {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 74vw;
+    margin-left: 150px;
+}
+
+.msges {
+  padding: 10px;
+  height: calc(100% - 120px);
+  overflow: auto;
+}
+
+.chat {
+  width: 70%;
+  background-color: white;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background-color: #f8fafd;
+}
+
+.title {
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.input {
+  background-color: white;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.input input {
+  border: none;
+  margin: 0;
+}
+
+.input .send {
+  display: flex;
+  align-items: center;
+}
+
+.input button {
+  background-color: #8752f6;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.input button svg {
+  color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.messageStyle {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.messageStyle .content {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-weight: 400;
+  width: max-content;
+  gap: 10px;
+  position: relative;
+}
+.messageStyle .content:hover .time {
+  color: black;
+}
+
+.messageStyle .content .time {
+  background-color: transparent;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  min-width: max-content;
+  top: -25px;
+}
+
+.messageStyle p {
+  background-color: #e7eff7;
+  padding: 10px 20px;
+  border-radius: 0 10px 10px 10px;
+}
+
+.messageStyle img {
+  width: 50%;
+}
+
+.owner {
+  flex-direction: row-reverse;
+}
+
+.owner .content {
+  align-items: end;
+}
+
+.owner p {
+  background-color: #8752f6;
+  color: white;
+  border-radius: 10px 0 10px 10px;
+}

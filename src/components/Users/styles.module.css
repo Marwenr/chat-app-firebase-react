@@ -1,0 +1,13 @@
+.usrs {
+  width: 200px;
+  height: 100vh;
+  background-color: white;
+  overflow: auto;
+  position: fixed;
+}
+
+.search {
+  border: none;
+  margin: 0;
+  padding: 16px;
+}
